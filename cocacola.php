@@ -29,7 +29,7 @@ function register_app($email){
     $post_data = json_encode(array(
         "requestType"   => "EMAIL_SIGNIN",
         "email"         => $email,
-        "continueUrl"   => "https://grivy.app/login-email/coke-ayo-idm",
+        "continueUrl"   => "https://grivy.app/login/coke-ayo-sat",
         "canHandleCodeInApp"    => true
     ));
     $register = $modulku->curl('https://www.googleapis.com/identitytoolkit/v3/relyingparty/getOobConfirmationCode?key=AIzaSyC2Jncgy1smi8CV91PG3sUZBDAo5raozYc', $post_data, $headers);
